@@ -41,8 +41,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 The Jambo Texts API is an SMS broadcast server that allows companies to be able to 
 **send automated sms messages to their users** in order to achieve the following:
 `phone number verification`, `http-triggered sms messages`, `sms broadcasts`
@@ -52,20 +50,15 @@ The Jambo Texts API is an SMS broadcast server that allows companies to be able 
 
 First off, you need to create an account on the [Jambo Texts Website](https://jambotexts.web.app). Here you will be given the required credentials to interract with the API such as your `organisation code` and `password`. You also can get help from our customer-care representatives once you are logged in.
 
-### Prerequisites
+### Usage
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+You can interract with the api through http requests by following the following instructions.
 
-### Installation
- 
-1. Clone the repo
+1. Generate an access token by sending a http **post** request to the following url containing your `organisation code` and `password`
 ```sh
-git clone https://github.com/github_username/repo.git
+https://www.jambotexts.com/access_token
 ```
+**Please note:** The access token will be valid for only 60 seconds for you to be able to use it to initialize a command.
 2. Install NPM packages
 ```sh
 npm install

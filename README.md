@@ -80,7 +80,7 @@ Depending on the programming language you are using, the body should look relati
 ```
 Make sure the phone number is formatted in the above format. Otherwise, the request will not be successful.
 
-3. Grab the verification code from the response that you get from step 2 above. The response body will be in the following format:
+3. Grab the verification code labelled `extra`, from the response that you get from step 2 above. The response body will be in the following format below:
 ```javascript
 {
     "responseCode": 200,

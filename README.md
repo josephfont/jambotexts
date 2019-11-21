@@ -4,10 +4,10 @@
     <img src="logo_lg.png" alt="Logo" width="200" height="200">
   </a>
 
-  <h2 align="center">Jambo Texts</h2>
+  <h1 align="center">Jambo Texts</h1>
 
   <p align="center">
-    SMS api for reliable phone-verification, sms broadcast and http endpoint-triggered sms services
+    A simple but powerful SMS api for reliable phone-verification, sms broadcast and http endpoint-triggered sms services
     <br />
     <a href="https://github.com/josephfont/jambotexts"><strong>Explore the docs »</strong></a>
     <br />

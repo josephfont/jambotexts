@@ -27,7 +27,7 @@
 
 * [About the Project](#about-the-project)
 * [Getting Started](#getting-started)
-  * [Generate Access Token](#Generate-Access-Token)
+  * [Generating Access Tokens](#Generate-Access-Token)
   * [Phone Number Verification](#Phone-Number-Verification)
 * [Issues](#Issues)
 * [License](#license)
@@ -44,7 +44,7 @@ The Jambo Texts API is an SMS broadcast server that allows companies to be able 
 ## Getting Started
 
 First off, you need to create an account on the [Jambo Texts Website](https://jambotexts.web.app). Here you will be given the required credentials to interract with the API such as your `organisation code` and `password`. You also can get help from our customer-care representatives once you are logged in.
-### Generate Access Token
+### Generating Access Tokens
 
 1. Generate an access token by sending a http **post** request to the following url containing your `organisation code` and `password` in your body.
 ```sh

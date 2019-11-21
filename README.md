@@ -66,43 +66,37 @@ Depending on the programming language you are using, the body should look relati
 }
 ```
 **Please note:** The access token will be valid for only **60 seconds** for you to be able to use it to initialize a command.
-2. Install NPM packages
+
+2. Initialize a verification request to have a phone number verified by sending a post request to the following url containing the `phone number to be verified` and your `access token`:
 ```sh
-npm install
+https://www.jambotexts.com/phone_verification
 ```
+Depending on the programming language you are using, the body should look relatively similar to the code sample below:
+```javascript
+{
+ "accessToken": "awtxswer3f4f",
+ "recepientNumber":"123456"
+}
+```
+Make sure the phone number is formatted in the above format. Otherwise, the request will not be successful.
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
+3. Grab the verification code from the response that you get from step 2 above. The response body will be in the following format:
+```javascript
+{
+    "responseCode": 200,
+    "response": "success",
+    "extra": "89QH"
+}
+```
+You should then present your user with an input option to enter the **4 digit** code they will receive on their phone number. Do a string compare to verify that the code they entered was the one you received from the response above. 
 
 <!-- ROADMAP -->
-## Roadmap
+## Issues
 
-See the [open issues](https://github.com/github_username/repo/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+See the [open issues](https://github.com/josephfont/jambotexts/issues) for a list of proposed features (and known issues).
 
 
 
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
@@ -112,18 +106,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Jambo Texts - [@huruplay](https://twitter.com/huruplay) - therealfont@gmail.com
 
-Project Link: [https://github.com/github_username/repo](https://github.com/github_username/repo)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
+Project Link: [https://github.com/josephfont/jambotexts](https://github.com/josephfont/jambotexts)
 
 
 

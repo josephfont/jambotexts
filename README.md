@@ -34,11 +34,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/josephfont/jambotext">
+    <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Jambo Texts/h3>
+  <h3 align="center">Jambo Texts</h3>
 
   <p align="center">
     SMS api for reliable phone-verification, sms broadcast and http endpoint-triggered sms services

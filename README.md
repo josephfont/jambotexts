@@ -27,6 +27,7 @@
 
 * [About the Project](#about-the-project)
 * [Getting Started](#getting-started)
+  * [Generate Access Token](#Generate-Access-Token)
   * [Phone Number Verification](#Phone-Number-Verification)
 * [Issues](#Issues)
 * [License](#license)
@@ -43,10 +44,7 @@ The Jambo Texts API is an SMS broadcast server that allows companies to be able 
 ## Getting Started
 
 First off, you need to create an account on the [Jambo Texts Website](https://jambotexts.web.app). Here you will be given the required credentials to interract with the API such as your `organisation code` and `password`. You also can get help from our customer-care representatives once you are logged in.
-
-### Phone Number Verification
-
-You can interract with the api through http requests by following the following instructions.
+### Generate Access Token
 
 1. Generate an access token by sending a http **post** request to the following url containing your `organisation code` and `password` in your body.
 ```sh
@@ -59,7 +57,18 @@ Depending on the programming language you are using, the body should look relati
  "password":"123456"
 }
 ```
+2. Grab the access token labelled `extra`, from the response that you get from a successful run of the above step. The response body will be in the following format below:
+```javascript
+{
+    "responseCode": 200,
+    "response": "success",
+    "extra": "awtxswer3f4f"
+}
+```
 **Please note:** The access token will be valid for only **60 seconds** for you to be able to use it to initialize a command.
+
+### Phone Number Verification
+1. Generate an access token from following the instructions. The access token is a **12 digit code** used to authorise the process below.
 
 2. Initialize a verification request to have a phone number verified by sending a post request to the following url containing the `phone number to be verified` and your `access token`:
 ```sh

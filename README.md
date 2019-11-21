@@ -4,7 +4,7 @@
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Jambo Texts</h3>
+  <h2 align="center">Jambo Texts</h2>
 
   <p align="center">
     SMS api for reliable phone-verification, sms broadcast and http endpoint-triggered sms services
@@ -27,16 +27,10 @@
 
 * [About the Project](#about-the-project)
 * [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [pricing](#roadmap)
-* [Contributing](#contributing)
+  * [Phone Number Verification](#Phone-Number-Verification)
+* [Issues](#Issues)
 * [License](#license)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project

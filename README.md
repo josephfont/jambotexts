@@ -91,7 +91,8 @@ Make sure the phone number is formatted in the above format. Otherwise, the requ
     "extra": "89QH"
 }
 ```
-You should then present your user with an input option to enter the **4 digit** code they will receive on their phone number. Do a string compare to verify that the code they entered was the one you received from the response above. 
+An sms will be sent out to their phone number once the above step completes successfuly. You should then present your user with an input option to enter the **4 digit** code they will receive on their phone number. Do a string compare to verify that the code they entered was the one you received from the response above. 
+Congrats, You are done! Enjoy
 
 <!-- ROADMAP -->
 ## Issues

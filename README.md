@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/josephfont/jambotext">
-    <img src="logo_lg.png" alt="Logo" width="140" height="140">
+    <img src="logo_lg.png" alt="Logo" width="200" height="200">
   </a>
 
   <h2 align="center">Jambo Texts</h2>

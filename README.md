@@ -4,7 +4,7 @@
     <img src="logo_lg.png" alt="Logo" width="200" height="200">
   </a>
 
-  <h2 align="center">Jambo Texts</h2>
+  <h1 align="center">Jambo Texts</h1>
 
   <p align="center">
     A simple but powerful SMS service for reliable phone number verification, sms broadcast and automated sms services through http requests

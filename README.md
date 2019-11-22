@@ -29,6 +29,7 @@
 * [Getting Started](#getting-started)
   * [Generating Access Tokens](#Generate-Access-Token)
   * [Phone Number Verification](#Phone-Number-Verification)
+  * [Automated SMS via http](#Automated-SMS-via-http)
 * [Issues](#Issues)
 * [License](#license)
 * [Contact](#contact)

@@ -110,7 +110,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Jambo Texts - [@huruplay](https://twitter.com/huruplay) - therealfont@gmail.com
+Jambo Texts - therealfont@gmail.com
 
 Project Link: [https://github.com/josephfont/jambotexts](https://github.com/josephfont/jambotexts)
 

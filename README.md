@@ -7,7 +7,7 @@
   <h1 align="center">Jambo Texts</h1>
 
   <p align="center">
-    A simple but powerful SMS service for reliable phone number verification, sms broadcast and sms services through http requests
+    A simple but powerful SMS service for reliable phone number verification, sms broadcast and automated sms services through http requests
     <br />
     <a href="https://github.com/josephfont/jambotexts"><strong>Explore the docs »</strong></a>
     <br />

@@ -68,9 +68,9 @@ Depending on the programming language you are using, the body should look relati
 **Please note:** The access token will be valid for only **60 seconds** for you to be able to use it to initialize a command.
 
 ### Phone Number Verification
-1. Generate an access token from following the instructions. The access token is a **12 digit code** used to authorise the process below.
+1. Generate an access token. 
 
-2. Initialize a verification request to have a phone number verified by sending a post request to the following url containing the `phone number to be verified` and your `access token`:
+2. Initiate a request to have a phone number verified by sending a post request to the following url containing the `phone number to be verified` and your `access token`:
 ```sh
 https://jambotexts.web.app/phone_verification
 ```
@@ -81,7 +81,7 @@ Depending on the programming language you are using, the body should look relati
  "recepientNumber":"254712345678"
 }
 ```
-Make sure the phone number is formatted in the above format. Otherwise, the request will not be successful.
+**Please note:** The phone number is formatted in the format `2547********`. Otherwise, the request will not be successful.
 
 3. Grab the verification code labelled `extra`, from the response that you get from step 2 above. The response body will be in the following format below:
 ```javascript
@@ -92,8 +92,36 @@ Make sure the phone number is formatted in the above format. Otherwise, the requ
 }
 ```
 An sms will be sent out to their phone number once the above step completes successfuly. You should then present your user with an input option to enter the **4 digit** code they will receive on their phone number. Do a string compare to verify that the code they entered was the one you received from the response above. 
-Congrats, You are done! Enjoy
+Congrats, You are done! 
 
+### Automated SMS via http
+
+1. Generate an access token. 
+
+2. Initiate a request to url below containing your `access token`, `phone number` and `message`
+```sh
+https://jambotexts.web.app/phone_verification
+```
+Depending on the programming language you are using, the body should look relatively similar to the code sample below:
+```javascript
+{
+ "accessToken": "awtxswer3f4f",
+ "recepientNumber":"254712345678",
+ "message":"Dear user, your monthly subscription has expired. Please renew it."
+}
+```
+**Please note:** One message has a limit of `140 characters`. Anything above that will be considered as two SMS. The phone number is formatted in the format `2547********`. Otherwise, the request will not be successful.
+
+3. Grab the verification code labelled `extra`, from the response that you get from step 2 above. The response body will be in the following format below:
+```javascript
+{
+    "responseCode": 200,
+    "response": "success",
+    "extra": "89QH"
+}
+```
+An sms will be sent out to their phone number once the above step completes successfuly. You should then present your user with an input option to enter the **4 digit** code they will receive on their phone number. Do a string compare to verify that the code they entered was the one you received from the response above. 
+Congrats, You are done! 
 <!-- ROADMAP -->
 ## Issues
 

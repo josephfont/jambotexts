@@ -78,7 +78,7 @@ Depending on the programming language you are using, the body should look relati
 ```javascript
 {
  "accessToken": "awtxswer3f4f",
- "recepientNumber":"123456"
+ "recepientNumber":"254712345678"
 }
 ```
 Make sure the phone number is formatted in the above format. Otherwise, the request will not be successful.

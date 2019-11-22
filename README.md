@@ -110,14 +110,13 @@ Depending on the programming language you are using, the body should look relati
  "message":"Dear user, your monthly subscription has expired. Please renew it."
 }
 ```
-**Please note:** One message has a limit of `140 characters`. Anything above that will be considered as two SMS. The phone number is formatted in the format `2547********`. Otherwise, the request will not be successful.
+**Please note:** One message has a limit of `140 characters`. Anything above that will be considered as two SMS. The phone number is formatted in the format `2547********`. Otherwise, the request will not be successful. A successful request will respond with a response similar to the on below.
 
-3. Grab the verification code labelled `extra`, from the response that you get from step 2 above. The response body will be in the following format below:
 ```javascript
 {
     "responseCode": 200,
     "response": "success",
-    "extra": "89QH"
+    "extra": "1 message sent to 254712345678"
 }
 ```
 An sms will be sent out to their phone number once the above step completes successfuly. You should then present your user with an input option to enter the **4 digit** code they will receive on their phone number. Do a string compare to verify that the code they entered was the one you received from the response above. 

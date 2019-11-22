@@ -48,7 +48,7 @@ First off, you need to create an account on the [Jambo Texts Website](https://ja
 
 1. Generate an access token by sending a http **post** request to the following url containing your `organisation code` and `password` in your body.
 ```sh
-https://www.jambotexts.com/access_token
+https://jambotexts.web.app/access_token
 ```
 Depending on the programming language you are using, the body should look relatively similar to the code sample below:
 ```javascript
@@ -72,7 +72,7 @@ Depending on the programming language you are using, the body should look relati
 
 2. Initialize a verification request to have a phone number verified by sending a post request to the following url containing the `phone number to be verified` and your `access token`:
 ```sh
-https://www.jambotexts.com/phone_verification
+https://jambotexts.web.app/phone_verification
 ```
 Depending on the programming language you are using, the body should look relatively similar to the code sample below:
 ```javascript
